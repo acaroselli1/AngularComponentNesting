@@ -1,6 +1,6 @@
 <p class="container" [ngClass]="{'gotMessage':upstream,'gotMessageDown':downstreamMessageGreatGrandparent && !upstream}">
     <span>GREAT-GRANDPARENT</span><i class="fa fa-arrow-up fa-lg up" [ngClass]="{'highlighted':upstream}"></i><span>{{message}}</span><i class="fa fa-arrow-down fa-lg down" [ngClass]="{'highlighted':!upstream && isSendMessageDownButtonClicked}"></i><span><input name="message" [(ngModel)]="downstreamMessageGreatGrandparent"></span>
-    <button (click)="handleClick($event)">Send Message Downstream</button>
+    <button type="button" class="btn btn-info" (click)="handleClick($event)">Send Message Downstream</button>
     <app-grandparent [isSendMessageDownButtonClicked]="isSendMessageDownButtonClicked" [messageFromParent]="downstreamMessage" (passDataToGreatGrandParent)="handleData($event)">
       </app-grandparent>
       

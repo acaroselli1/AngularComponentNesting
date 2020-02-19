@@ -12,6 +12,7 @@ export class GreatGrandchildComponent implements OnInit, OnChanges {
   @Output() passDataToGrandchild = new EventEmitter();
   message: string = "";
   upstream: boolean;
+  isClicked:boolean = false;
 
   ngOnInit() { }
 
@@ -19,6 +20,7 @@ export class GreatGrandchildComponent implements OnInit, OnChanges {
     setTimeout(() => {
       this.passDataToGrandchild.emit(this.message);
       this.upstream = true;
+      this.isClicked = true;
     }, 1000);
   }
 

@@ -5,13 +5,14 @@ p {
 }
 
 .up, .down{
-    padding-left:50px;
+    padding-left:100px;
 }
 
 span{
     padding-left:20px;
+    
 }
 
 .highlighted {
-    color:red;
+    color:#dc143c;
 }

@@ -1,4 +1,7 @@
-<p class="container" [ngClass]="{'gotMessage':upstream, 'gotMessageDown':messageFromParent && !upstream}">
-    GREAT-GRANDCHILD<i class="fa fa-arrow-up fa-lg up" [ngClass]="{'highlighted':upstream}"></i><span><input name="message" [(ngModel)]="message"></span><button (click)="handleClick($event)">Send Message Upstream</button> <i class="fa fa-arrow-down fa-lg down" [ngClass]="{'highlighted':!upstream && isSendMessageDownButtonClicked}"></i><span>{{messageFromParent}}</span>
-    
-    </p>
+<p class="container" [ngClass]="{'gotMessage':upstream, 'gotMessageDown':messageFromParent && !upstream }">
+    GREAT-GRANDCHILD<i class="fa fa-arrow-up fa-lg up" [ngClass]="{'highlighted':upstream}"></i><span><input
+            name="message" [(ngModel)]="message"></span><button  class="btn btn-info"  (click)="handleClick($event)">Send Message
+        Upstream</button> <i class="fa fa-arrow-down fa-lg down"
+        [ngClass]="{'highlighted':!upstream && isSendMessageDownButtonClicked}"></i><span>{{messageFromParent}}</span>
+
+</p>

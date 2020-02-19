@@ -1,17 +1,18 @@
 .container{
-    background-color:lightskyblue;
-    padding:20px;
-    height:20vh;    
+    background-color: grey;
+    padding:22px;
+    height:22vh; 
+    color:black;   
   }
   
   .gotMessage{
-    background-color:navy;
+    background-color:#06425C;
     color:white;
     border:2px solid white;
   }
 
   .gotMessageDown{
-    background-color:darkgreen;
+    background-color:#425c06;
     color:white;
     border:2px solid white;
   }
