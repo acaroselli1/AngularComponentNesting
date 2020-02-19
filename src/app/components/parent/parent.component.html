@@ -1,0 +1,4 @@
+<p class="container" [ngClass]="{'gotMessage':upstream, 'gotMessageDown':messageFromParent && !upstream}">
+    <span>PARENT</span><i class="fa fa-arrow-up fa-lg up" [ngClass]="{'highlighted':upstream}"></i><span>{{message}}</span><i class="fa fa-arrow-down fa-lg down" [ngClass]="{'highlighted':!upstream && isSendMessageDownButtonClicked}"></i><span>{{messageFromParent}}</span>
+    <app-child [isSendMessageDownButtonClicked]="isSendMessageDownButtonClicked" [messageFromParent]="messageFromParent" (passDataToParent)="handleData($event)"></app-child>
+    </p>
